@@ -67,4 +67,4 @@ columns = ['setosa','versicolor','virginica']
 hata_goster = pd.DataFrame(hata_matrisi,columns,index)                      
 plt.figure(figsize=(10,6))  
 sns.heatmap(hata_goster, annot=True)
-plt.show()
+plt.show() 

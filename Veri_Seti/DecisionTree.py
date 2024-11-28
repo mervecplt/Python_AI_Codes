@@ -7,6 +7,7 @@ print (iris.target_names)
 print (iris.target)
 print (iris.data)
 
+
 X =  iris.data 
 Y = iris.target
 

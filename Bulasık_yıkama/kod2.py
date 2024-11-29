@@ -8,6 +8,7 @@ kirlilik = ctrl.Antecedent(np.arange(0, 100, 1), 'kirlilik seviyesi')
 yıkama_süresi = ctrl.Consequent(np.arange(0, 180, 1), 'yıkama süresi')
 
 
+
 # Üyelik fonksiyonlarının tanımlanması
 bulaşık_miktarı['az'] = fuzz.trimf(bulaşık_miktarı.universe, [0, 0, 30])
 bulaşık_miktarı['normal'] = fuzz.trimf(bulaşık_miktarı.universe, [10, 30, 60])

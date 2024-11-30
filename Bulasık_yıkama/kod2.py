@@ -5,7 +5,7 @@ from skfuzzy import control as ctrl
 # Giriş ve çıkış değişkenlerinin tanımlanması
 bulaşık_miktarı = ctrl.Antecedent(np.arange(0, 100, 1), 'bulaşık miktarı')
 kirlilik = ctrl.Antecedent(np.arange(0, 100, 1), 'kirlilik seviyesi')
-yıkama_süresi = ctrl.Consequent(np.arange(0, 180, 1), 'yıkama süresi')
+yıkama_süresi = ctrl.Consequent(np.arange(0 , 180, 1), 'yıkama süresi')
 
 
 

@@ -42,7 +42,7 @@ plt.show()
 
 # Modelin doğruluğunu hesaplama ve yazdırma
 from sklearn import metrics
-print("Accuracy: ", metrics.accuracy_score(y_test, y_pred))
+print("Accuracy: ", metrics.accuracy_score(y_test , y_pred))
 
 # Week 3 - Naive Bayes Sınıflandırma Alg. Kod Sonu
 

@@ -12,13 +12,13 @@ yıkama_süresi = ctrl.Consequent(np.arange(0 , 180, 1), 'yıkama süresi')
 # Üyelik fonksiyonlarının tanımlanması
 bulaşık_miktarı['az'] = fuzz.trimf(bulaşık_miktarı.universe, [0, 0, 30])
 bulaşık_miktarı['normal'] = fuzz.trimf(bulaşık_miktarı.universe, [10, 30, 60])
-bulaşık_miktarı['çok'] = fuzz.trimf(bulaşık_miktarı.universe, [50, 60, 100])
+bulaşık_miktarı['çok'] = fuzz.trimf(bulaşık_miktarı.universe,  [50, 60, 100])
 
 kirlilik['az'] = fuzz.trimf(kirlilik.universe, [0, 0, 30])
 kirlilik['normal'] = fuzz.trimf(kirlilik.universe, [10, 30, 60])
-kirlilik['çok'] = fuzz.trimf(kirlilik.universe, [50, 60, 100])
+kirlilik['çok'] = fuzz.trimf(kirlilik.universe, [50, 60,  100])
 
-yıkama_süresi['kısa'] = fuzz.trimf(yıkama_süresi.universe, [0, 0, 50])
+yıkama_süresi['kısa'] = fuzz.trimf(yıkama_süresi.universe, [0, 0,  50])
 yıkama_süresi['normal'] = fuzz.trimf(yıkama_süresi.universe, [40, 50, 100])
 yıkama_süresi['uzun'] = fuzz.trimf(yıkama_süresi.universe, [60, 80, 180])
 

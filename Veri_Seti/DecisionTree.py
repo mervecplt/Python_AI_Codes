@@ -12,7 +12,7 @@ X =  iris.data
 Y = iris.target
 
 from sklearn.model_selection import train_test_split
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.20, random_state = 0)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y,  test_size = 0.20, random_state = 0)
 print("Eğitim veri seti boyutu=",len(X_train))
 print("Test veri seti boyutu=",len(X_test))
 

@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 
 # Karmaşıklık matrisini görselleştirme
 index = ['No' , 'S', 'V', 'F', 'Q'] # Sınıf Etiketleri
-columns = ['No' , 'S', 'V', 'F', 'Q'] # Tahmin edilen Sınıflar
+columns = ['No' , 'S', 'V', 'F',  'Q'] # Tahmin edilen Sınıflar
 cm_df = pd.DataFrame(cm, columns, index)
 
 plt.figure(figsize=(10,6))

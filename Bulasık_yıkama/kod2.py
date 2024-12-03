@@ -1,6 +1,6 @@
 import numpy as np
 import skfuzzy as fuzz
-from skfuzzy import control as ctrl
+from skfuzzy import  control as ctrl
 
 # Giriş ve çıkış değişkenlerinin tanımlanması
 bulaşık_miktarı = ctrl.Antecedent(np.arange(0, 100, 1), 'bulaşık miktarı')

@@ -8,7 +8,7 @@ print (iris.target)
 print (iris.data)
 
 
-X =  iris.data 
+X =   iris.data 
 Y = iris.target
 
 from sklearn.model_selection import  train_test_split

@@ -44,7 +44,7 @@ plt.show()
 from sklearn import metrics
 print("Accuracy: ", metrics.accuracy_score(y_test , y_pred))
 
-# Week 3 -  Naive Bayes Sınıflandırma Alg. Kod Sonu
+# Week 3 -  Naive Bayes Sınıflandırma Alg. Kod Sonu/*
 
 
 # Week 3 - Decision Tree Sınıflandırma Alg. %95,26 Doğruluk Değeri (Kod Başlangıcı)

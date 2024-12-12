@@ -16,7 +16,7 @@ print("test veri seti boyutu: ",len(X_test))
 print("eğitim veri seti boyutu : ",len(Y_train))
 print("test veri seti boyutu: ",len(Y_test))
 
-from sklearn.neighbors  import KNeighborsClassifier
+from sklearn.neighbors  import  KNeighborsClassifier
 model = KNeighborsClassifier()
 model.fit(X_train,Y_train)
 

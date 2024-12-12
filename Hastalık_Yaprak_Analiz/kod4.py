@@ -31,7 +31,7 @@ def veri_donusturme(klasor_adi, sinif_adi):
             continue
         goruntu_sinif.append(veriler)
 
-    return goruntu_sinif
+    return  goruntu_sinif
 
 yanik_veri = veri_donusturme(bakteri_yaprak_yanik, "bakteri_yaprak_yanik")
 yanik_veri_df = pd.DataFrame(yanik_veri)

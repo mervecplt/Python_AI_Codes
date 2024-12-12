@@ -2,10 +2,10 @@ import numpy as np
 
 # Ortam boyutlarını belirle
 ortam_satir_sayisi = 11
-ortam_sutun_sayisi = 11
+ortam_sutun_sayisi =  11
 
 # Q değerlerini sıfırla başlat
-q_degerleri = np.zeros((ortam_satir_sayisi, ortam_sutun_sayisi, 4))
+q_degerleri =  np.zeros((ortam_satir_sayisi, ortam_sutun_sayisi, 4))
 
 # Hareketleri tanımla
 hareketler = ['yukari', 'sag', 'asagi', 'sol']
@@ -92,7 +92,7 @@ def en_kisa_mesafe (basla_satir_indeks, basla_sutun_indeks):
         return en_kisa
     
 # Q-learning parametreleri
-epsilon = 0.9
+epsilon =  0.9
 azalma_degeri = 0.9
 ogrenme_orani = 0.9
 

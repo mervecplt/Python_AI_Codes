@@ -94,7 +94,7 @@ def en_kisa_mesafe (basla_satir_indeks, basla_sutun_indeks):
 # Q-learning parametreleri
 epsilon =  0.9
 azalma_degeri = 0.9
-ogrenme_orani = 0.9
+ogrenme_orani =  0.9
 
 # Q-learning algoritmasını çalıştır
 for adim in range(1000):

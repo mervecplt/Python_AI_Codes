@@ -21,7 +21,7 @@ gnp = CategoricalNB()
 gnp.fit(X_train, y_train)
 
 # Test verileri üzerinde tahmin yapma
-y_pred =  gnp.predict(X_test)
+y_pred = gnp.predict(X_test)
 
 # Karmaşıklık matrisini oluşturma
 from sklearn.metrics import confusion_matrix

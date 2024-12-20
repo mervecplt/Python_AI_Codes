@@ -22,7 +22,7 @@ def veri_donusturme(klasor_adi, sinif_adi):
         gorunu_boyutlandirma = goruntu_oku.resize((28, 28))
         goruntu_donusturme = np.array(gorunu_boyutlandirma).flatten()
         if sinif_adi == "bakteri_yaprak_yanik":
-            veriler = np.append(goruntu_donusturme, [0])
+            veriler = np.append(goruntu_donusturme,  [0])
         elif sinif_adi == "kahve_nokta":
             veriler = np.append(goruntu_donusturme, [1])
         elif sinif_adi == "yaprak_isi":

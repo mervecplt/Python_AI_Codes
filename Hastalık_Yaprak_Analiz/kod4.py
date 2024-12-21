@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
-import os
+import  os
 import PIL.Image as  img
 from  sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn import  metrics
+from sklearn  import  metrics
 
 bakteri_yaprak_yanik = "rice_leaf_diseases/Bacterial leaf blight/"
 kahve_nokta = "rice_leaf_diseases/Brown spot/"

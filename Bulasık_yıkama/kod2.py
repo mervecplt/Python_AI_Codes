@@ -23,7 +23,7 @@ yıkama_süresi['normal'] = fuzz.trimf(yıkama_süresi.universe, [40, 50, 100])
 yıkama_süresi['uzun'] = fuzz.trimf(yıkama_süresi.universe, [60, 80, 180])
 
 # Kuralların tanımlanması
-kural1 = ctrl.Rule(bulaşık_miktarı['az'] & kirlilik['az'], yıkama_süresi['kısa'])
+kural1 = ctrl.Rule(bulaşık_miktarı['az' ] & kirlilik['az'], yıkama_süresi['kısa'])
 kural2 = ctrl.Rule(bulaşık_miktarı['normal'] & kirlilik['az'], yıkama_süresi['normal'])
 kural3 = ctrl.Rule(bulaşık_miktarı['çok'] & kirlilik['az'], yıkama_süresi['normal'])
 kural4 = ctrl.Rule(bulaşık_miktarı['az'] & kirlilik['normal'], yıkama_süresi['normal'])

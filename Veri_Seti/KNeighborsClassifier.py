@@ -25,7 +25,7 @@ from sklearn.metrics import confusion_matrix
 hata_matrisi=confusion_matrix(Y_test,Y_tahmin)
 print(hata_matrisi)
 
-import seaborn as sn
+import seaborn  as sn
 import pandas as pd
 import  matplotlib.pyplot as  plt
 

@@ -82,7 +82,7 @@ def en_kisa_mesafe (basla_satir_indeks, basla_sutun_indeks):
         return []
     else:
         gecerli_satir_indeks, gecerli_sutun_indeks = basla_satir_indeks, basla_sutun_indeks
-        en_kisa = []
+        en_kisa =  []
         en_kisa.append ([gecerli_satir_indeks, gecerli_sutun_indeks])
         while not engel_mi(gecerli_satir_indeks, gecerli_sutun_indeks):
             hareket_indeks = sonraki_hareket_belirle(gecerli_satir_indeks, gecerli_sutun_indeks, 1.)

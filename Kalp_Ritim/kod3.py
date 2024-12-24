@@ -9,7 +9,7 @@ train = pd.read_csv("mitbih_train.csv")
 X_train = np.array(train)[:, :187] # Özellikler
 y_train = np.array(train)[:, 187]  # Etiketler
 
-# Test Veri setini Yükleme
+# Test Veri setini  Yükleme
 test = pd.read_csv("mitbih_test.csv")
 # Eğitim verilerini özellikler ve etiketler olarak ayırma
 X_test = np.array(test)[:, :187] # Özellikler

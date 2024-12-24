@@ -104,7 +104,7 @@ for adim in range(1000):
     eski_satir_indeks, eski_sutun_indeks = satir_indeks, sutun_indeks
     satir_indeks, sutun_indeks = sonraki_noktaya_git(satir_indeks, sutun_indeks, hareket_indeks)
     odul = oduller[satir_indeks, sutun_indeks]
-    eski_q_degeri = q_degerleri[eski_satir_indeks, eski_sutun_indeks, hareket_indeks]
+    eski_q_degeri  = q_degerleri[eski_satir_indeks, eski_sutun_indeks, hareket_indeks]
     fark = odul + (azalma_degeri * np.max(q_degerleri[satir_indeks, sutun_indeks])) - eski_q_degeri
     yeni_q_degeri = eski_q_degeri + (ogrenme_orani * fark)
     q_degerleri[eski_satir_indeks, eski_sutun_indeks, hareket_indeks] = yeni_q_degeri

@@ -9,7 +9,7 @@ dataset = pd.read_excel('home/ENB2012_data.xlsx')
 dataset = dataset.values
 
 # Girdi (x) ve çıktı (y) verilerini ayırma
-X = dataset[:, 0:8]
+X =  dataset[:, 0:8]
 y = dataset[:, 8:10]
 
 # Veri setini eğitim ve test setlerine ayırıyma
@@ -17,10 +17,10 @@ from sklearn.model_selection import  train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
 # Verileri ön işleme alıyoruz.
-from sklearn.preprocessing import StandardScaler
+from  sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 data_x_train_scaled = sc.fit_transform(X_train)
-data_x_test_scaled = sc.transform(X_test)
+data_x_test_scaled  = sc.transform(X_test)
 
 # Verileri numpy dizisine dönüştürme
 data_x_train_scaled, data_x_test_scaled, data_y_train, data_y_test = \

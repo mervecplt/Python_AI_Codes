@@ -97,7 +97,7 @@ azalma_degeri = 0.9
 ogrenme_orani =  0.9
 
 # Q-learning algoritmasını çalıştır
-for adim in range(1000):
+for adim  in range(1000):
   satir_indeks, sutun_indeks = baslangic_belirle()
   while not engel_mi(satir_indeks, sutun_indeks):
     hareket_indeks = sonraki_hareket_belirle(satir_indeks, sutun_indeks, epsilon)
@@ -110,8 +110,8 @@ for adim in range(1000):
     q_degerleri[eski_satir_indeks, eski_sutun_indeks, hareket_indeks] = yeni_q_degeri
 print('Eğitim tamamlandı.')
 
-ogr_sonrasi_satir = input('Robotun harekete başlayacağı satır indeksini giriniz: ')
+ogr_sonrasi_satir =  input('Robotun harekete başlayacağı satır indeksini giriniz: ')
 ogr_sonrasi_sutun = input('Robotun harekete başlayacağı sütun indeksini giriniz: ')
 
-# En kısa mesafeyi hesapla ve ekrana yazdır
-print ('Kargo noktasına giden rota: ', en_kisa_mesafe(int(ogr_sonrasi_satir), int(ogr_sonrasi_sutun) ))
+# En kısa mesafeyi  hesapla ve ekrana yazdır
+print (' Kargo noktasına giden rota: ', en_kisa_mesafe(int(ogr_sonrasi_satir), int(ogr_sonrasi_sutun) ))

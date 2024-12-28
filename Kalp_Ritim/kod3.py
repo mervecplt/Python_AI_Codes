@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd # Bir dosyaya erişip içeriğini okumak-yazmak veya baştan sona tasarlamak
 
 # Veri setini yükleme aşaması
-train = pd.read_csv("mitbih_train.csv")
+train =  pd.read_csv("mitbih_train.csv")
 # Eğitim verilerini özellikler ve etiketler olarak ayırma
 X_train = np.array(train)[:, :187] # Özellikler
 y_train = np.array(train)[:, 187]  # Etiketler

@@ -7,7 +7,7 @@ import pandas as pd # Bir dosyaya erişip içeriğini okumak-yazmak veya baştan
 train =  pd.read_csv("mitbih_train.csv")
 # Eğitim verilerini özellikler ve etiketler olarak ayırma
 X_train = np.array(train)[:, :187] # Özellikler
-y_train = np.array(train)[:, 187]  # Etiketler
+y_train =  np.array(train)[:, 187]  # Etiketler
 
 # Test Veri setini  Yükleme
 test = pd.read_csv("mitbih_test.csv")
@@ -16,7 +16,7 @@ X_test = np.array(test)[:, :187] # Özellikler
 y_test = np.array(test)[:, 187]  # Etiketler
 
 # Naive Bayes Sınıflandırıcısını kullanarak modelin Eğitimi
-from sklearn.naive_bayes import CategoricalNB
+from sklearn.naive_bayes import  CategoricalNB
 gnp = CategoricalNB()
 gnp.fit(X_train, y_train)
 

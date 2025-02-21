@@ -101,7 +101,7 @@ for adim  in range(1000):
   satir_indeks, sutun_indeks = baslangic_belirle()
   while not engel_mi(satir_indeks, sutun_indeks):
     hareket_indeks = sonraki_hareket_belirle(satir_indeks, sutun_indeks, epsilon)
-    eski_satir_indeks, eski_sutun_indeks = satir_indeks, sutun_indeks
+    eski_satir_indeks,  eski_sutun_indeks = satir_indeks, sutun_indeks
     satir_indeks, sutun_indeks = sonraki_noktaya_git(satir_indeks, sutun_indeks, hareket_indeks)
     odul = oduller[satir_indeks, sutun_indeks]
     eski_q_degeri  = q_degerleri[eski_satir_indeks, eski_sutun_indeks, hareket_indeks]

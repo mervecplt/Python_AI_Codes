@@ -15,7 +15,7 @@ fitness_function = fitness_func # Fitness değerini hesaplar, istenen çıktıya
 
 # Genetik algoritma parametrelerini tanımlar
 num_generations = 100  # Toplam nesil sayısı
-num_parents_mating = 7  # Eşleşecek ebeveyn sayısı
+num_parents_mating =  7  # Eşleşecek ebeveyn sayısı
 
 sol_per_pop = 50 # Popülasyon başına çözüm sayısı
 num_genes = len(function_inputs) # Her çözümdeki gen (değişken) sayısı

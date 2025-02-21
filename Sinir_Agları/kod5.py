@@ -8,13 +8,13 @@ import pandas as pd
 dataset = pd.read_excel('home/ENB2012_data.xlsx')
 dataset = dataset.values
 
-# Girdi (x) ve çıktı (y) verilerini ayırma
+# Girdi (x)  ve çıktı (y) verilerini ayırma
 X =  dataset[:, 0:8]
 y = dataset[:, 8:10]
 
-# Veri setini eğitim ve test setlerine ayırıyma
+# Veri setini eğitim ve  test setlerine ayırıyma
 from sklearn.model_selection import  train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+X_train, X_test, y_train,  y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
 # Verileri ön işleme alıyoruz.
 from  sklearn.preprocessing import StandardScaler

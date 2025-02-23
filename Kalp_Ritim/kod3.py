@@ -12,8 +12,8 @@ y_train =  np.array(train)[:, 187]  # Etiketler
 # Test Veri setini  Yükleme
 test = pd.read_csv("mitbih_test.csv")
 # Eğitim verilerini özellikler ve etiketler olarak ayırma
-X_test = np.array(test)[:, :187] # Özellikler
-y_test = np.array(test)[:, 187]  # Etiketler
+X_test =  np.array(test)[:, :187] # Özellikler
+y_test =  np.array(test)[:, 187]  # Etiketler
 
 # Naive Bayes Sınıflandırıcısını kullanarak modelin Eğitimi
 from sklearn.naive_bayes import  CategoricalNB
@@ -21,7 +21,7 @@ gnp = CategoricalNB()
 gnp.fit(X_train, y_train)
 
 # Test verileri üzerinde tahmin yapma
-y_pred = gnp.predict(X_test)
+y_pred =  gnp.predict(X_test)
 
 # Karmaşıklık matrisini oluşturma
 from sklearn.metrics import confusion_matrix

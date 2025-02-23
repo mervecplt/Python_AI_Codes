@@ -5,7 +5,7 @@ Bu bölümde farklı binalara ait 768 adet veri setinde (Tsanas ve Xifara, 2012)
 import numpy as np
 import pandas as pd
 
-dataset = pd.read_excel('home/ENB2012_data.xlsx')
+dataset =  pd.read_excel('home/ENB2012_data.xlsx')
 dataset = dataset.values
 
 # Girdi (x)  ve çıktı (y) verilerini ayırma

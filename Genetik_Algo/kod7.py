@@ -8,14 +8,14 @@ desired_output = 44
 # Fitness fonksiyonunu tanımlar. Bu fonksiyon, genetik algoritmanın çözümlerini değerlendirir
 def fitness_func(ga_instance, solution, solution_idx):
     output = numpy.sum(solution * function_inputs) # Çözüm ve girişlerin çarpımının toplamını hesaplar
-    fitness = 1.0 / numpy.abs(output - desired_output) # Fitness değerini hesaplar, istenen çıktıya ne kadar yakın olduğunu ölçer
+    fitness = 1.0 /  numpy.abs(output - desired_output) # Fitness değerini hesaplar, istenen çıktıya ne kadar yakın olduğunu ölçer
     return fitness
 
 fitness_function = fitness_func # Fitness değerini hesaplar, istenen çıktıya ne kadar yakın olduğunu ölçer
 
 # Genetik algoritma parametrelerini tanımlar
 num_generations = 100  # Toplam nesil sayısı
-num_parents_mating =  7  # Eşleşecek ebeveyn sayısı
+num_parents_mating  =  7  # Eşleşecek ebeveyn sayısı
 
 sol_per_pop = 50 # Popülasyon başına çözüm sayısı
 num_genes = len(function_inputs) # Her çözümdeki gen (değişken) sayısı
